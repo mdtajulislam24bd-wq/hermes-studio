@@ -216,10 +216,8 @@ export function Footer() {
           {/* Brand block */}
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 16 }}>
-              <svg width="22" height="22" viewBox="0 0 100 100" fill="var(--brand)" style={{ display: 'inline-block' }}>
-                <path d="M22 24h10v22h36V24h10v52H68V58H32v18H22z" />
-                <path d="M6 36 L22 30 L22 56 Z" opacity="0.85" />
-                <path d="M94 36 L78 30 L78 56 Z" opacity="0.85" />
+              <svg width="22" height="22" viewBox="0 0 100 100" fill="none" style={{ display: 'inline-block' }}>
+                <polygon points="6,78 22,34 34,62 50,21 66,62 78,34 94,78" fill="var(--brand)" />
               </svg>
               <span style={{
                 fontFamily: 'Bricolage Grotesque',
