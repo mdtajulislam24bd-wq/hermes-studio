@@ -1,0 +1,32 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Navbar } from '../components/layout/Navbar';
+import { HeroSection } from '../components/sections/HeroSection';
+import { ResultsTicker } from '../components/sections/ResultsTicker';
+import { ServicesSection } from '../components/sections/ServicesSection';
+import { StatementSection } from '../components/sections/StatementSection';
+import { SmartDevelopment } from '../components/sections/SmartDevelopment';
+import { PortfolioSection } from '../components/sections/PortfolioSection';
+import { QuoteBanner } from '../components/sections/QuoteBanner';
+import { LatestCases } from '../components/sections/LatestCases';
+import { TestimonialsSection } from '../components/sections/TestimonialsSection';
+import { BookingModal } from '../components/portal/BookingModal';
+import { Footer } from '../components/layout/Footer';
+---
+
+<Layout>
+  <Navbar client:load />
+  <main class="main-content-shutter">
+    <HeroSection client:load />
+    <ResultsTicker client:load />
+    <ServicesSection client:load />
+    <StatementSection client:load />
+    <SmartDevelopment client:load />
+    <PortfolioSection client:load />
+    <QuoteBanner client:load />
+    <LatestCases client:load />
+    <TestimonialsSection client:load />
+  </main>
+  <BookingModal client:load />
+  <Footer client:load />
+</Layout>
